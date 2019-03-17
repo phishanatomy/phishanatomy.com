@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #263238;
+    color: #06bcd4;
+    font-family: Consolas, Monaco, Andale Mono, Lucida Console;
+}
+
+a {
+    color: #06bcd4;
+    text-decoration: none;
+}
+
+::selection {
+    background: #06bcd4;
+    color: #263238;
+}
+
+::-moz-selection {
+    background: #06bcd4;
+    color: #263238;
+}
+
+#logo-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-center {
+    width: 476px;
+    height: 226px;
+}
+
+#logo {
+    width: 476px;
+    height: 226px;
+    background-image: url(art/logo-blue.png);
+    background-size: 100%;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+#logo-window {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-image: url(art/skeleton-black.png);
+    background-size: 476px 226px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    position: absolute;
+    display: none;
+}
+
+#contact {
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.h:hover {
+    background: #06bcd4;
+    color: #263238;
+}
+
+@media only screen and (max-width: 500px) {
+    #logo, #logo-center {
+        width: 300px;
+        height: 142.5px;
+    }
+
+    #logo-window {
+        background-size: 300px 142.5px;
+    }
+}
