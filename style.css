@@ -12,6 +12,13 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
 ::selection {
     background: #06bcd4;
     color: #263238;
@@ -20,6 +27,27 @@ a {
 ::-moz-selection {
     background: #06bcd4;
     color: #263238;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 25px;
+}
+
+#header-title {
+    border-right: 2px solid #06bcd4;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+.header-block {
+    display: inline-block;
+    height: 30px;
 }
 
 #logo-wrap {
@@ -66,6 +94,14 @@ a {
     text-align: center;
     height: 10vh;
     line-height: 10vh;
+}
+
+.h {
+    border-radius: 3px;
+    line-height: 20px;
+    padding: 1px;
+    height: 20px;
+    display: inline-block;
 }
 
 .h:hover {
